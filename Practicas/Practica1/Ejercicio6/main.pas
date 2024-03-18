@@ -10,7 +10,9 @@ type
 procedure txtToBin(var txtArch:text; var binArch:bookArch);
 var aux:book;
 begin
+  writeln('Ronaldo');
   reset(txtArch);
+  writeln('Messi');
   rewrite(binArch);
   while not eof(txtArch) do
   begin
@@ -60,9 +62,9 @@ var
   txtArch: text;
   binArch: bookArch;
 begin
+  writeln('ajlksfdsoiughdslg');
   assign(txtArch, 'libros.txt');
   assign(binArch, 'libros.dat');
-
   txtToBin(txtArch, binArch);
   agregarLibro(binArch);
   modificarLibro(binArch);
